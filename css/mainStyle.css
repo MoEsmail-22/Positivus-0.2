@@ -120,11 +120,18 @@ button:hover {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
   }
-  
+
   .spachialHedaers p {
     width: 100%;
     line-height: 1.4;
   }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 999999999;
+  background-color: #0000004e;
 }
 
 .container {
@@ -366,13 +373,13 @@ button:hover {
   .header .flex ul {
     flex-direction: column;
     position: relative;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     justify-content: start;
     overflow: hidden;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-    z-index: 99;
+    z-index: 99999;
     position: absolute;
     transition: var(--transitionDuration) ease-out;
     background-color: #fff;
@@ -388,8 +395,10 @@ button:hover {
     position: absolute;
     content: '© 2024 Positivus. All Rights Reseved.Made By moesamil-22 in 2025';
     font-size: 16px;
+    line-height: 1.5;
+    width: 80%;
     left: 50%;
-    top: 90%;
+    top: 75%;
     transform: translate(-50%, -50%);
     color: #383838;
     -webkit-transform: translate(-50%, -50%);
@@ -423,7 +432,7 @@ button:hover {
   .header .flex a:last-of-type:not(.logo a) {
     margin-right: 10px;
     margin-bottom: 15px;
-    z-index: 9999;
+    z-index: 999999;
   }
 
   .header .flex a:last-of-type * {
@@ -437,7 +446,7 @@ button:hover {
 
   .header .burger * {
     width: 35px;
-    z-index: 999;
+    z-index: 999999;
     height: 5px;
     margin-right: 10px;
     background-color: #000;
@@ -798,9 +807,9 @@ button:hover {
 /*--totop@mdeia--*/
 
 @media (max-width: 992px) {
-    .toTop {
-        top: 950px;
-    }
+  .toTop {
+    top: 620px;
+  }
 }
 
 /*--propadel--*/
@@ -1115,8 +1124,6 @@ button:hover {
   .ather:nth-of-type(2) {
     height: 185px;
   }
-
-  
   .ather:nth-of-type(4),
   .ather:nth-of-type(5) {
     height: 182px;
@@ -1594,6 +1601,15 @@ button:hover {
   .contact .form {
     width: 100%;
   }
+  .contact .radio {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact .radio div:last-of-type {
+    margin-top: 10px;
+  }
+
   .contact input:not(input[type='radio']),
   .contact textarea {
     width: 100%;
