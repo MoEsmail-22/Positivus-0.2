@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Positivus-0.2</title>
+    <title>POSTIVE-WEBSITE</title>
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/mainStyle.css">
@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div class="dark"></div>
     <div class="header">
 
         <div class="flex">
@@ -28,11 +29,11 @@
                     <span class="s3"></span>
                 </div>
                 <ul class="hiddeMe">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#useCase">Use Cases</a></li>
-                    <li><a href="#workingProces">Our Process</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a class="menuClose" href="#services">Services</a></li>
+                    <li><a class="menuClose" href="#useCase">Use Cases</a></li>
+                    <li><a class="menuClose" href="#workingProces">Our Process</a></li>
+                    <li><a class="menuClose" href="#about">about</a></li>
+                    <li><a class="menuClose" href="#contact">contact</a></li>
                 </ul>
                 <a href="#getQute"><button>Request a quote</button></a>
             </nav>
@@ -489,10 +490,14 @@
                     <img src="./images/undraw_lightbulb_moment_re_ulyo.svg" alt="man Thinking">
                     <div class="form">
                         <div class="radio">
-                            <input type="radio" name="rad" value="hi" id="r1">
-                            <label for="r1">Say Hi</label>
-                            <input type="radio" name="rad" value="quote" id="getQute" checked>
-                            <label for="getQute">Get a Quote</label>
+                            <div>
+                                <input type="radio" name="rad" value="hi" id="r1">
+                                <label for="r1">Say Hi</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="rad" value="quote" id="getQute" checked>
+                                <label for="getQute">Get a Quote</label>
+                            </div>
                         </div>
                         <label for="name">name</label>
                         <input type="text" id="name" placeholder="Name">
@@ -502,7 +507,7 @@
                         <input type="number" id="num" placeholder="0123456789" pattern="[0-9]*" inputmode="numeric"
                             min="0" maxlength="13" minlength="5">
                         <textarea name="text" id="text" placeholder="Leve a massage"></textarea>
-                        <input type="submit">
+                        <input type="submit" class="submit">
                     </div>
                 </div>
             </div>
@@ -554,7 +559,7 @@
             </div>
             <div class="end">
                 <hr>
-                <p>© 2024 Positivus. All Rights Reserved.
+                <p>© 2024 Positivus. All Rights Reseved.
                     Made By <span>moesamil-22</span> in 2025</p>
             </div>
         </footer>
