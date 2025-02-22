@@ -17,3 +17,16 @@ document.querySelectorAll('.less').forEach(function (element) {
     parentBox.classList.toggle('ather');
   });
 });
+
+const menu = document.querySelector('.burger');
+const hiddenMnue = document.querySelector('.hiddeMe');
+
+menu.addEventListener('click', function () {
+  hiddenMnue.style.left === '0%'
+    ? (hiddenMnue.style.left = '-100%')
+    : (hiddenMnue.style.left = '0%');
+
+  for (let i = 1; i => 3; i++) {
+    document.querySelector(`.s${i}`).classList.toggle(`burger${i}`);
+  }
+});
