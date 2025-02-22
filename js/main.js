@@ -30,3 +30,23 @@ menu.addEventListener('click', function () {
     document.querySelector(`.s${i}`).classList.toggle(`burger${i}`);
   }
 });
+
+const menuContent = document.querySelector('.menuClose');
+
+menuContent.addEventListener('click', function () {
+  hiddenMnue.style.left = '-100%';
+  for (let i = 1; i => 3; i++) {
+    document.querySelector(`.s${i}`).classList.toggle(`burger${i}`);
+  }
+});
+
+const submit = document.querySelector('.submit');
+const overlay = document.querySelector('.dark');
+
+submit.addEventListener('click', function () {
+  overlay.classList.toggle('overlay');
+  let name = document.getElementById('name').value;
+  if (!name) {
+    alert('Please Enter ur Name & try angin');
+  } else alert(`Fuck u, ${name}!`).style.fontSize = '2rem';
+});
