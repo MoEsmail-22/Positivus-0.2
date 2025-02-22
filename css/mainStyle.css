@@ -113,12 +113,14 @@ button:hover {
 
   .spachialHedaers h2 {
     margin-bottom: 10px;
+    width: fit-content;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
   }
+  
   .spachialHedaers p {
     width: 100%;
     line-height: 1.4;
@@ -796,9 +798,9 @@ button:hover {
 /*--totop@mdeia--*/
 
 @media (max-width: 992px) {
-  .toTop {
-    top: 620px;
-  }
+    .toTop {
+        top: 950px;
+    }
 }
 
 /*--propadel--*/
@@ -1114,12 +1116,10 @@ button:hover {
     height: 185px;
   }
 
-  .ather:nth-of-type(4) {
-    height: 170px;
-  }
-
+  
+  .ather:nth-of-type(4),
   .ather:nth-of-type(5) {
-    height: 175px;
+    height: 182px;
   }
 
   .ather:nth-of-type(6) {
