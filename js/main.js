@@ -1,6 +1,7 @@
 'use strict';
+//show more in working prosces
 
-document.querySelectorAll('.less').forEach(function (element) {
+document.querySelectorAll('.boxWork').forEach(function (element) {
   element.addEventListener('click', function () {
     const parentBox = element.closest('.boxWork');
 
@@ -18,6 +19,7 @@ document.querySelectorAll('.less').forEach(function (element) {
   });
 });
 
+//burger menu
 const menu = document.querySelector('.burger');
 const hiddenMnue = document.querySelector('.hiddeMe');
 
@@ -26,18 +28,20 @@ menu.addEventListener('click', function () {
     ? (hiddenMnue.style.left = '-100%')
     : (hiddenMnue.style.left = '0%');
 
-  for (let i = 1; i => 3; i++) {
+  for (let i = 1; i <= 3; i++) {
     document.querySelector(`.s${i}`).classList.toggle(`burger${i}`);
   }
 });
 
-const menuContent = document.querySelector('.menuClose');
+const menuContent = document.querySelectorAll('.menuClose');
 
-menuContent.addEventListener('click', function () {
-  hiddenMnue.style.left = '-100%';
-  for (let i = 1; i => 3; i++) {
-    document.querySelector(`.s${i}`).classList.toggle(`burger${i}`);
-  }
+menuContent.forEach(function (element) {
+  element.addEventListener('click', function () {
+    hiddenMnue.style.left = '-100%';
+    for (let i = 1; i <= 3; i++) {
+      document.querySelector(`.s${i}`).classList.toggle(`burger${i}`);
+    }
+  });
 });
 
 const submit = document.querySelector('.submit');
@@ -48,5 +52,5 @@ submit.addEventListener('click', function () {
   let name = document.getElementById('name').value;
   if (!name) {
     alert('Please Enter ur Name & try angin');
-  } else alert(`Fuck u, ${name}!`).style.fontSize = '2rem';
+  } else alert(`Fuck U ${name}`);
 });
